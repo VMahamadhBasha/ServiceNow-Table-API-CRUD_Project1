@@ -1,0 +1,99 @@
+1.GET:https://dev343926.service-now.com/api/now/table/u_test1
+       {
+    "result": [
+        {
+            "u_name": "Madhu",
+            "sys_id": "57c8736183ce0f1010c7c310feaad3e7",
+            "u_number": "PRA1021",
+            "sys_updated_by": "admin",
+            "u_street": "",
+            "sys_created_on": "2026-07-13 09:15:47",
+            "u_address": "Ananthapur",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2026-07-13 09:15:47",
+            "sys_tags": "",
+            "sys_class_name": "u_test1",
+            "sys_created_by": "admin"
+        },
+        {
+            "u_name": "Basha",
+            "sys_id": "6e784c89836d0b5010c7c310feaad34f",
+            "u_number": "PRA1020",
+            "sys_updated_by": "admin",
+            "u_street": "",
+            "sys_created_on": "2026-06-16 05:57:39",
+            "u_address": "chowdur",
+            "sys_mod_count": "1",
+            "sys_updated_on": "2026-07-13 09:13:44",
+            "sys_tags": "",
+            "sys_class_name": "u_test1",
+            "sys_created_by": "admin"
+
+}
+    ]
+}
+
+2.GET-single:https://dev343926.service-now.com/api/now/table/u_test1/6e784c89836d0b5010c7c310feaad34f
+
+
+     {
+    "result": {
+        "u_name": "Basha",
+        "sys_id": "6e784c89836d0b5010c7c310feaad34f",
+        "u_number": "PRA1020",
+        "sys_updated_by": "admin",
+        "u_street": "",
+        "sys_created_on": "2026-06-16 05:57:39",
+        "u_address": "basa",
+        "sys_mod_count": "0",
+        "sys_updated_on": "2026-06-16 05:57:39",
+        "sys_tags": "",
+        "sys_class_name": "u_test1",
+        "sys_created_by": "admin"
+    }
+}
+
+3.PUT: https://dev343926.service-now.com/api/now/table/u_test1/6e784c89836d0b5010c7c310feaad34f
+    input:{"u_address": "chowdur"}
+   OUTPUT:{
+    "result": {
+        "u_name": "Basha",
+        "sys_id": "6e784c89836d0b5010c7c310feaad34f",
+        "u_number": "PRA1020",
+        "sys_updated_by": "admin",
+        "u_street": "",
+        "sys_created_on": "2026-06-16 05:57:39",
+        "u_address": "chowdur",
+        "sys_mod_count": "1",
+        "sys_updated_on": "2026-07-13 09:13:44",
+        "sys_tags": "",
+        "sys_class_name": "u_test1",
+        "sys_created_by": "admin"
+    }
+}
+
+4.POST:https://dev343926.service-now.com/api/now/table/u_test1
+   Body:{
+        "u_name": "Madhu",
+        "u_number": "PRA1021",
+
+        "u_address": "Ananthapur"
+        }
+ OUTPUT:{
+    "result": {
+        "u_name": "Madhu",
+        "sys_id": "57c8736183ce0f1010c7c310feaad3e7",
+        "u_number": "PRA1021",
+        "sys_updated_by": "admin",
+        "u_street": "",
+        "sys_created_on": "2026-07-13 09:15:47",
+        "u_address": "Ananthapur",
+        "sys_mod_count": "0",
+        "sys_updated_on": "2026-07-13 09:15:47",
+        "sys_tags": "",
+        "sys_class_name": "u_test1",
+        "sys_created_by": "admin"
+    }
+}
+5.DELETE:https://dev343926.service-now.com/api/now/table/u_test1/6e784c89836d0b5010c7c310feaad34f
+     
